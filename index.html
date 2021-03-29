@@ -1,61 +1,67 @@
 <html>
     <head>
         <title>Nathan's Google</title>
+        <link rel="stylesheet" href="./index.css" />
+
     </head>
     <body>
         <section>
-            <header>
-                <ul>
-                    <li>
-                        <a href="/">Images</a>
-                    </li>
-                    <li>
-                        <a href="/">Gmail</a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <img src="http://placehold.it/50" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <img src="http://placehold.it/50" alt="">
-                        </a>
-                    </li>
-                </ul>
+
+            <header class="main-header">
+                <nav>
+                    <ul class="main-header__nav-list">
+                        <li>
+                            <a href="/" class="main-header__nav-link">Images</a>
+                        </li>
+                        <li>
+                            <a href="/" class="main-header__nav-link">Gmail</a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <img src="http://placehold.it/50" alt="" class="main-header__nav-image"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <img src="http://placehold.it/50" alt="" class="main-header__nav-image"/>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
-            <section>
-                <div>
-                    <img src="https://www.google.ie/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google">
-                </div>
-                <form>
+
+            <section class="main-body">
+                <div class="main-body__wrapper">
                     <div>
-                        <input type="text" placeholder="Type to Search" name="Search" />
-                    </div> 
-                    <div>
-                        <button>Google search</button>
-                        <button>I'm Feeling lucky!!</button>
+                        <img src="https://www.google.ie/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google" class="main-body__logo">
                     </div>
-                </form>
-                <div>
-                    <p>
-                        Also available in 
-                        <a href="https://www.google.ie/setprefs?sig=0_r-FUHIGmWmrEY4BX3TCt9-8rVhk%3D&hl=ga&source=homepage&sa=X&ved=0ahUKEwiUosqIzZzvAhXzrnEKHQcqB-UQ2ZgBCA4" target="_blank">Gaeilge</a>
-                    </p>
+                    <form>
+                        <div class="main-body__search-box-wrapper">
+                            <input type="text" placeholder="Type to Search" name="Search" class="main-body__search-box" />
+                        </div> 
+                        
+                        <div class="main-body__button-wrapper">
+                            <button>Google search</button>
+                            <button>I'm Feeling lucky!!</button>
+                        </div>
+                    </form>
+                    <div>
+                        <p class="main-body__as-gaelige">
+                            Also available in 
+                            <a href="https://www.google.ie/setprefs?sig=0_r-FUHIGmWmrEY4BX3TCt9-8rVhk%3D&hl=ga&source=homepage&sa=X&ved=0ahUKEwiUosqIzZzvAhXzrnEKHQcqB-UQ2ZgBCA4" target="_blank">Gaeilge</a>
+                        </p>
+                    </div>
                 </div>
             </section>
+
+            <!-- Style the footer to be grey -->
             <footer>
+                <!-- This section to have a border bottom  -->
                 <section>
                     <p>Ireland</p>
                 </section>
+                <!-- Use flex and position the three lists side by side -->
                 <section>
-                    <div>
-                        <p>
-                            <img src="./images/download.png" alt="Leaf" />
-                            <!-- This is very offensive -->
-                            Carbon Neutral Since Yer Ma 
-                        </p>
-                    </div>
                     <div>
                         <ul>
                             <li>
@@ -71,7 +77,15 @@
                                 <a href="/">How search Works</a>
                             </li>
                         </ul>
-
+                        
+                        <div>
+                            <p>
+                                <img src="./images/download.png" alt="Leaf" />
+                                <!-- This is very offensive -->
+                                Carbon Neutral Since Yer Ma 
+                            </p>
+                        </div>
+                        
                         <ul>
                             <li>
                                 <a href="/">Privacy</a>
@@ -86,6 +100,7 @@
                     </div>
                 </section>
             </footer>
+
         </section>
     </body>
 </html>

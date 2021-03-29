@@ -1,0 +1,80 @@
+html,
+body {
+  font-family: sans-serif;
+}
+
+.main-header {
+}
+
+.main-header__nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.main-header__nav-list li {
+  padding: 10px;
+}
+
+.main-header__nav-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-header__nav-image {
+  border-radius: 50%;
+}
+
+.main-body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-body__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-body__logo {
+  max-height: 92px;
+}
+
+.main-body__search-box {
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid lightgrey;
+}
+
+.main-body__search-box-wrapper {
+  width: 100%;
+  min-width: 400px;
+  margin: 20px 0;
+}
+
+.main-body__button-wrapper button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #f8f9fa;
+  border: 1px solid #f8f9fa;
+}
+
+.main-body__button-wrapper button:hover {
+  border-color: #dadce0;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.main-body__as-gaelige {
+  transition: all ease-in-out 2s;
+  cursor: pointer;
+}
+
+.main-body__as-gaelige:hover {
+  transform: scale(5, 5) rotate(3600deg);
+}
